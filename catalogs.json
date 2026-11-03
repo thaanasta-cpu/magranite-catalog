@@ -1,9 +1,7 @@
-{
-  "catalogs": [
-    {
-      "id": "fotopoulou",
-      "title": "Fotopoulou Magdalini EE Price List 2025",
-      "file": "catalogs/PriceList_2025_Fotopoulou.pdf"
-    }
-  ]
-}
+[
+  {
+    "id": "fotopoulou",
+    "title": "Fotopoulou Price List 2025",
+    "file": "catalogs/PriceList_2025_Fotopoulou.pdf"
+  }
+]
