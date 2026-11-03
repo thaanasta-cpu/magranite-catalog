@@ -1,24 +1,11 @@
-# Magranite Digital Catalog
+# MAGRANITE Digital Catalog v2
 
-## Setup
-1. Create a **public** GitHub repository, e.g. `magranite-catalog`.
-2. Upload `index.html`, `catalogs.json` and the `catalogs/` folder.
-3. Add your actual PDFs in `catalogs/` named `tenax.pdf` and `lantania.pdf`, or change `catalogs.json` to match your filenames. Remove entries for catalogs you have not uploaded yet.
-4. GitHub repository → Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)` → Save.
-5. Wait for GitHub Pages to publish. Your URL will resemble `https://USERNAME.github.io/magranite-catalog/`.
+Ανεβάστε στο υπάρχον repository τα `index.html`, `catalogs.json` και το αρχείο `assets/magranite-logo.jpg` διατηρώντας τη δομή φακέλων.
 
-## Share a specific page
-`https://USERNAME.github.io/magranite-catalog/?catalog=tenax#page=24`
+**ΜΗ διαγράψετε τον υπάρχοντα φάκελο `catalogs/` και τα PDF.**
 
-The **Copy link** button creates a link for the current catalog and page.
+Το `catalogs.json` περιλαμβάνει τον κατάλογο Fotopoulou. Αν έχετε ήδη προσθέσει και άλλους καταλόγους, διατηρήστε τις εγγραφές τους.
 
-## Add more catalogs
-Upload `catalogs/newcatalog.pdf` and add an object to `catalogs.json`, e.g.:
-`{"id":"newcatalog","title":"New catalog","file":"catalogs/newcatalog.pdf"}`
+Παράδειγμα: `https://thaanasta-cpu.github.io/magranite-catalog/?catalog=fotopoulou#page=24`
 
-## Notes
-- PDFs are **publicly accessible**; do not upload confidential pricing or private documents.
-- GitHub rejects files larger than 100 MiB through ordinary Git uploads; browser upload limits may be lower. Optimize large PDFs first.
-- PDF.js is loaded from cdnjs; the viewer requires internet access.
-- PDF pages are rendered in a canvas; the interface supports page navigation, zoom, downloading and shareable page links, but not full-text search.
-- This is a static site: no server or subscription is required. GitHub Pages availability and usage policies apply.
+Σημείωση: Ο PDF viewer χρησιμοποιεί PDF.js από το cdnjs και χρειάζεται σύνδεση στο Internet. Το PDF πρέπει να είναι διαθέσιμο στο repository και να έχει το ίδιο ακριβώς όνομα με αυτό στο JSON.
